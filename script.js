@@ -1,3 +1,6 @@
+//Allow for plaer input 
+const prompt = require("prompt-sync")();
+
 //Computer choice logic
 
 function getComputerChoice(){
@@ -12,6 +15,12 @@ function getComputerChoice(){
     }
 }
 
+
+const choices = ["rock", "paper", "scissors"];
+
 function getPlayerChoice(){
-    const choices = ["rock", "paper", "scissors"]
+    
+    let choice = prompt("Please choose rock, paper, or scissors. ")
+        
 }
+console.log(getPlayerChoice())
