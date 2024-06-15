@@ -71,7 +71,7 @@ function playRound(playerChoice, computerChoice){
 
 //Play 5 rounds of the game 
 
-function playGame(){
+/* function playGame(){
 
 for (let i = 0; i < 5; i += 1){
     console.log(`Round ${Math.round(i+i)}`);
@@ -88,6 +88,15 @@ playRound(playerChoice, computerChoice);
     } else {
         console.log("It's a tie!")
     }
-}
+} */
+
+//Creating the UI for the game
+
+const rockBtn = document.getElementById('rock')
+const paperBtn = document.getElementById('paper')
+const scissorBtn = document.getElementById('scissors')
+
+rockBtn.addEventListener('click', () => handleClick('rock'))
+
 
 playGame();
